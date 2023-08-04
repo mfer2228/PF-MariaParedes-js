@@ -1,0 +1,79 @@
+
+$footerheight: 150px;
+
+
+.body {
+background-image: url(../Images/fondo.jpg);
+background-size:cover;
+}
+
+body {
+  position: relative;
+}
+
+body{ min-height:100vh; margin:0; position:relative; margin-bottom: 40px; }
+
+body::after {
+  content: '';
+  display: block;
+  height: $footerheight;
+}
+
+#mesa {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footerheight;
+}
+
+
+#mesa {
+
+    .elements{
+       margin-left: 100px;
+       margin-right: 100px;
+       height: 100px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+
+       .radio{
+        height: 150px;
+        margin-top: 0%;
+       }
+
+       .libro{
+        margin-right: 50 px;
+       }
+
+       
+    }
+
+}
+
+
+#countdown {
+  justify-self: flex-end;
+  background-color: white;
+  border: 1px;
+  border-color: rgb(85, 74, 74);
+  border-radius: 20px;
+  text-align: justify;
+
+}
+
+.reloj-digital {
+    font-family: "Courier New", monospace;
+    font-size: 40px;
+    color: rgba(34, 34, 34, 0.692);
+    transition: color 0.5s ease-in-out;
+
+  }
+  .reloj-digital.descanso {
+    color: rgb(178, 245, 142);
+  }
+
+.lista {
+  list-style: none;
+  text-decoration: none;
+}
